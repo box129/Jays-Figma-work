@@ -1,0 +1,166 @@
+# Axiom Tracker – Design System Rules
+
+This document describes how to translate the **Axiom Black UI** Figma file into code in this Next.js project, and how to use the Figma MCP tools effectively.
+
+## 1. Technology & Styling Overview
+
+- **App stack**: Next.js + React
+- **Languages**: TypeScript/JavaScript + CSS
+- **Styling approach**: Plain CSS / CSS Modules (no Tailwind configured). When MCP generates React + Tailwind classes, you MUST:
+  - Keep the React/JSX structure as a reference for layout and semantics
+  - Convert all Tailwind classes into regular CSS (or CSS Modules) that match the project conventions
+  - Do **not** add Tailwind as a dependency unless explicitly requested
+
+## 2. Design Tokens
+
+### 2.1 Colors
+
+From Figma variables:
+
+- `color.bg.dark` – `#141B34` (token name in Figma: **Dark**)
+
+From the generated hero and page structure (semantic mapping – use these as starting points):
+
+- `color.bg.page` – `#FFFFFF`
+- `color.bg.primary` – `#000000`
+- `color.text.primary` – `#000000`
+- `color.text.onPrimary` – `#FFFFFF`
+
+Guidelines:
+
+- Implement tokens in a central CSS file (e.g. `styles/tokens.css`) or a TS module exporting a map, e.g. `src/styles/tokens.ts`.
+- Components must use semantic tokens (e.g. `color.bg.primary`) instead of hard-coded hex values whenever possible.
+
+### 2.2 Typography
+
+Fonts used in the Figma node:
+
+- **Unbounded** – section and card titles (e.g. "Never Miss a Certificate Expiry Again", section headings)
+- **Montserrat** – navigation items, buttons, feature titles, body copy in cards
+- **Geist** – supporting body text and descriptions
+- **Averta** – footer section labels ("QUICK LINKS", "CONTACT US", "LEGAL")
+
+Create a typography scale with semantic names, for example:
+
+- `font.family.display` → `"Unbounded", system-ui, sans-serif`
+- `font.family.body` → `"Montserrat", system-ui, sans-serif`
+- `font.family.meta` → `"Geist", system-ui, sans-serif`
+- `font.family.label` → `"Averta", system-ui, sans-serif`
+
+- `font.size.xl` → 40px (large headings like hero title)
+- `font.size.lg` → 32px (FAQ titles, big CTAs)
+- `font.size.md` → 22–24px (subheadings)
+- `font.size.sm` → 16–18px (body text, nav links)
+
+When building components, choose sizes from this scale instead of ad‑hoc pixel values.
+
+### 2.3 Spacing & Radius
+
+Common patterns from the hero and cards:
+
+- Spacing tokens (approximate):
+  - `space.xs` → 8px
+  - `space.sm` → 12–16px
+  - `space.md` → 20–24px
+  - `space.lg` → 32px
+  - `space.xl` → 48–64px
+- Radius tokens:
+  - `radius.pill` → 9999px (nav chips, small badges)
+  - `radius.button` → 10–18px (primary buttons, CTAs)
+  - `radius.card` → 10–20px (hero container, feature cards, FAQ cards)
+
+Use these tokens instead of arbitrary values when implementing layout and components.
+
+## 3. Component Library & Page Structure
+
+### 3.1 Global Layout
+
+Top-level landing page structure for node `1706:7231`:
+
+1. **Navbar**
+   - Left: logo mark
+   - Center: nav links – `Home`, `Features`, `FAQs`
+   - Right: `Login` (outlined button) and `Get Started` (filled, black background)
+2. **Hero Section**
+   - Full-width darkened hero image background with overlay
+   - Chip: "Welcome to Axiom Tracker"
+   - Heading: "Never Miss a Certificate Expiry Again."
+   - Subtext describing certificate tracking
+   - Primary CTA: `Get Started`
+   - Secondary CTA: `Learn How it Works` + arrow icon
+   - Small testimonial / value statement with user avatars under the hero
+3. **About Section**
+4. **Three-step Process Section** – cards `01`, `02`, `03` explaining workflow
+5. **Features Section** – three feature cards with images and text
+6. **FAQ Section** – accordion-like cards with question text
+7. **Final CTA Section** – full-width black card with title, subtitle, and CTA button
+8. **Footer** – logo, quick links, contact info, legal links
+
+Create React components that mirror this structure instead of a single monolithic page component, for example:
+
+- `Navbar`
+- `Hero`
+- `AboutSection`
+- `HowItWorksSection`
+- `FeaturesSection`
+- `FaqSection`
+- `FinalCtaSection`
+- `Footer`
+
+Each of these should live under `src/components/landing/` and consume shared tokens.
+
+### 3.2 Buttons
+
+Two primary button styles from the design:
+
+1. **Primary / Filled Button**
+   - Background: `color.bg.primary` (black)
+   - Text: `color.text.onPrimary` (white)
+   - Radius: `radius.button`
+   - Font: `font.family.body`, `font.size.sm`–`md`, medium/semi‑bold weight
+
+2. **Secondary / Outline Button**
+   - Background: transparent or white (depending on context)
+   - Border: 1px `color.text.primary`
+   - Text: `color.text.primary`
+   - Radius: `radius.button`
+
+For the **Login** button in the navbar and hero, use the secondary style. For **Get Started**, use the primary filled style.
+
+## 4. Figma MCP Usage Rules
+
+When using Figma MCP tools with this project:
+
+1. **Node & File**
+   - Primary landing page node: `1706:7231`
+   - File key: `sNze0fMMmH6V5HKgQvwFfV`
+
+2. **get_design_context**
+   - Use it to generate reference JSX and asset URLs for a specific node.
+   - Treat resulting Tailwind classes as **design hints only**, not final implementation.
+   - Transfer:
+     - Layout structure → React components & HTML elements
+     - Image constants → move to a dedicated asset config (e.g. `src/config/landingAssets.ts`)
+     - Data attributes `data-node-id` → keep while implementing to maintain traceability back to Figma, or remove once stable.
+
+3. **get_variable_defs**
+   - Use to pull Figma variables (e.g. `{ "Dark": "#141B34" }`).
+   - Map variables into the semantic design tokens described above.
+
+4. **get_screenshot**
+   - Use screenshots for visual reference only.
+   - Do NOT commit the raw MCP screenshot URLs directly into the codebase.
+
+5. **create_design_system_rules**
+   - This document is the output of that tool for this project. Update it whenever:
+     - New tokens are added in Figma (colors, typography, spacings)
+     - New global components are introduced (e.g. new card types)
+     - The styling system in code changes (e.g. adopting Tailwind or a UI library).
+
+## 5. Implementation Guidelines for the Landing Page
+
+- Implement the first public page as a Next.js route (e.g. `app/page.tsx` or `pages/index.tsx`, depending on the project setup).
+- Break the page into reusable components as listed above.
+- Use semantic HTML (e.g. `<header>`, `<main>`, `<section>`, `<footer>` where appropriate).
+- Ensure the **Login** button in the navbar navigates to `/login` (placeholder page can be added later).
+- Keep all design decisions aligned with tokens and typography rules, not arbitrary values.

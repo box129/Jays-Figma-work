@@ -1,0 +1,369 @@
+const imgFreepikGenrateAnImageThatExplainsmartCertificateTra359761 = "https://www.figma.com/api/mcp/asset/97b7c926-90cc-4c02-85cb-e17594f35184";
+const imgPortraitYoungGirlGrayTShirtPurpleWall1 = "https://www.figma.com/api/mcp/asset/f1f0ae0f-6d18-4bbe-bde9-74401d0de964";
+const imgHappyManStudentWithAfroHairdoShowsWhiteTeethBeingGoodMoodAfterClasses1 = "https://www.figma.com/api/mcp/asset/54b6ec21-9592-471f-a330-67e1be98b5bd";
+const imgCloseUpPortraitAttractiveYoungWomanIsolated11 = "https://www.figma.com/api/mcp/asset/d7aa9e88-d17b-429a-abd6-53fd0c91b6b6";
+const img897551 = "https://www.figma.com/api/mcp/asset/d76e2fb7-2bd2-4f7a-9c0e-3717bced2687";
+const img51 = "https://www.figma.com/api/mcp/asset/ec98f2d7-3964-47a2-853d-af248056da24";
+const imgWomanSittingHomeOfficeDeskLookingBusinessDocuments1 = "https://www.figma.com/api/mcp/asset/3614f7b6-2f57-40aa-bf62-f3bab3320af3";
+const imgSubtract = "https://www.figma.com/api/mcp/asset/69dba925-7915-4086-bf2a-334885229f1e";
+const imgEllipse2349 = "https://www.figma.com/api/mcp/asset/64a35a8f-980a-4758-94ce-3510f4f7cc3c";
+const img = "https://www.figma.com/api/mcp/asset/c8ba3351-af04-4a9f-88ab-4f4bcee3c569";
+const imgSubtract1 = "https://www.figma.com/api/mcp/asset/b6fcc130-f460-4ee2-b205-99731f89b657";
+const imgSubtract2 = "https://www.figma.com/api/mcp/asset/4d7a0538-24fb-4d8b-a6c5-4bc6a1a8ed76";
+const imgFrame1171279796 = "https://www.figma.com/api/mcp/asset/06ee8371-cac3-4b4e-9660-05a14ccba0b6";
+const imgLine2 = "https://www.figma.com/api/mcp/asset/abdb0cf7-73e1-4a2f-8026-c9eafea59360";
+const img1 = "https://www.figma.com/api/mcp/asset/b40095c6-b896-46e1-94a1-296d1efbd834";
+const img2 = "https://www.figma.com/api/mcp/asset/6da759cf-3211-4803-b0c8-64dcd0004f95";
+const imgSubtract3 = "https://www.figma.com/api/mcp/asset/077a8b15-1da9-497e-aea7-0c69c7cd63e1";
+
+export default function Home() {
+  return (
+    <div className="bg-white relative w-full overflow-hidden" data-name="Axiomtracker" data-node-id="1706:7231">
+      {/* Navbar */}
+      <div className="w-full flex items-center justify-between px-8 py-6 bg-white border-b border-gray-200" data-node-id="1708:7296">
+        <div className="flex gap-20 items-center">
+          <div className="relative size-24" data-name="Logo" data-node-id="1707:7279">
+            <img alt="Axiom Tracker Logo" className="w-full h-full" src={imgSubtract} />
+          </div>
+          <div className="hidden lg:flex gap-6 items-center">
+            <div className="border border-black rounded-full px-10 py-2.5">
+              <p className="font-montserrat font-medium text-lg text-black text-center">Home</p>
+            </div>
+            <div className="border border-black rounded-full px-10 py-2.5">
+              <p className="font-montserrat font-medium text-lg text-black text-center">Features</p>
+            </div>
+            <div className="border border-black rounded-full px-8 py-2.5">
+              <p className="font-montserrat font-medium text-lg text-black text-center">FAQs</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-7 items-center">
+          <a href="/login" className="border border-black rounded-2xl px-10 py-5.5 transition-all duration-200 hover:bg-black hover:text-white cursor-pointer">
+            <p className="font-montserrat font-medium text-lg text-center">Login</p>
+          </a>
+          <a href="#get-started" className="bg-black rounded-2xl px-10 py-5.5 transition-all duration-200 hover:bg-gray-800 hover:shadow-lg cursor-pointer">
+            <p className="font-montserrat font-medium text-lg text-white text-center">Get Started</p>
+          </a>
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="relative w-full bg-black overflow-hidden" data-node-id="1715:873">
+        <div className="absolute inset-0 overflow-hidden">
+          <img alt="Hero Background" className="w-full h-full object-cover opacity-100" src={imgFreepikGenrateAnImageThatExplainsmartCertificateTra359761} />
+          <div className="absolute inset-0 bg-black/20" />
+        </div>
+
+        <div className="relative z-10 flex flex-col items-center justify-between px-4 sm:px-8 py-20 min-h-[90vh]" data-node-id="1717:874">
+          <div className="flex-1 flex flex-col gap-12 items-center justify-center w-full max-w-5xl mx-auto pt-12" data-node-id="1712:491">
+            {/* Welcome Badge */}
+            <div className="bg-white rounded-lg px-8 py-4 inline-flex" data-node-id="1712:493">
+              <p className="font-montserrat font-medium text-lg text-black">Welcome to Axiom Tracker</p>
+            </div>
+
+            {/* Main Content */}
+            <div className="flex flex-col gap-6 items-center w-full text-center text-white" data-node-id="1712:497">
+              <h1 className="font-unbounded font-semibold text-5xl sm:text-6xl leading-tight max-w-4xl">
+                Never Miss a Certificate<br />Expiry Again.
+              </h1>
+              <p className="font-geist font-medium text-xl sm:text-2xl leading-relaxed max-w-3xl">
+                Smart certificate tracking that keeps your team compliant, certified, and audit-ready. Automated alerts, and real-time compliance dashboards in one powerful platform.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 items-center w-full justify-center mt-4" data-node-id="1712:500">
+              <button className="bg-white rounded-3xl px-8 py-4 inline-flex cursor-pointer hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95" data-node-id="1712:501">
+                <p className="font-montserrat font-semibold text-lg text-black">Get Started</p>
+              </button>
+              <div className="flex items-center gap-2" data-node-id="1712:503">
+                <button className="bg-white rounded-3xl px-8 py-4 inline-flex cursor-pointer hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95" data-node-id="1712:504">
+                  <p className="font-montserrat font-semibold text-lg text-black">Learn How it Works</p>
+                </button>
+                <button className="bg-white rounded-3xl px-4 py-4 inline-flex cursor-pointer hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95" data-node-id="1712:506">
+                  <img alt="Arrow" className="size-8" src={img} />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Avatars - At bottom of hero */}
+          <div className="flex gap-5 items-center pb-6 mt-auto" data-node-id="1712:490">
+            <div className="bg-white rounded-full p-2 flex gap-0 flex-row">
+              <div className="rounded-full overflow-hidden size-11 -mr-2 border-2 border-white">
+                <img alt="User 1" className="w-full h-full object-cover" src={imgPortraitYoungGirlGrayTShirtPurpleWall1} />
+              </div>
+              <div className="rounded-full overflow-hidden size-11 -mr-2 border-2 border-white z-10">
+                <img alt="User 2" className="w-full h-full object-cover" src={imgHappyManStudentWithAfroHairdoShowsWhiteTeethBeingGoodMoodAfterClasses1} />
+              </div>
+              <div className="rounded-full overflow-hidden size-11 border-2 border-white z-20">
+                <img alt="User 3" className="w-full h-full object-cover" src={imgCloseUpPortraitAttractiveYoungWomanIsolated11} />
+              </div>
+            </div>
+            <p className="font-geist font-semibold text-sm sm:text-base text-white max-w-xs">
+              Track certifications, ensure compliance, and automate renewals effortlessly with Axiom tracker
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="w-full px-8 py-16 bg-white" data-node-id="1717:883">
+        <div className="max-w-6xl mx-auto space-y-6" data-node-id="1717:881">
+          <p className="font-unbounded font-semibold text-2xl text-gray-700">About</p>
+          <p className="font-geist font-medium text-2xl text-black leading-relaxed">
+            {`Axiom Tracker is a modern compliance management platform that automates certificate tracking, safety orientations, and incident reporting for organizations. With intelligent expiration alerts, QR verification, and real-time dashboards, we help 500+ companies maintain 100% compliance while saving 60% of administrative time.`}
+          </p>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="w-full px-8 py-20 bg-white" data-node-id="1717:880">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="space-y-6 mb-16" data-node-id="1714:637">
+            <div className="flex flex-col gap-7 items-center" data-node-id="1713:518">
+              <div className="relative size-16" data-name="Circle" data-node-id="1713:525">
+                <img alt="" className="w-full h-full" src={imgSubtract2} />
+              </div>
+              <p className="font-unbounded font-semibold text-3xl sm:text-4xl text-gray-700 text-center">
+                How Does Axiom Tracker Work?
+              </p>
+            </div>
+            <p className="font-geist font-medium text-xl sm:text-2xl text-black text-center max-w-3xl mx-auto">
+              Get started in minutes, not months. Our simple three-step process gets you compliant fast.
+            </p>
+          </div>
+
+          {/* Three Step Cards with Connecting Lines */}
+          <div className="hidden md:block">
+            {/* Circles with connecting lines */}
+            <div className="relative flex justify-center items-center mb-12">
+              <div className="flex items-center justify-between w-full max-w-4xl">
+                {[
+                  { step: "01" },
+                  { step: "02" },
+                  { step: "03" }
+                ].map((card, idx) => (
+                  <div key={idx} className="flex items-center">
+                    <div className="bg-black rounded-full w-32 h-32 flex items-center justify-center shadow-xl z-10 transition-all duration-200 hover:shadow-2xl hover:scale-110 cursor-pointer">
+                      <p className="font-unbounded font-semibold text-3xl text-white text-center">{card.step}</p>
+                    </div>
+                    {idx < 2 && (
+                      <div className="h-0.5 bg-black w-24 lg:w-32 xl:w-40"></div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Content Cards */}
+            <div className="grid grid-cols-3 gap-6">
+              {[
+                { title: "Upload Certificates", body: "Bulk upload existing certificates or integrate with your HR system. Our AI-powered OCR extracts all relevant data automatically." },
+                { title: "Set Alert Rules", body: "Configure notification schedules, escalation chains, and renewal workflows. Customize alerts for different certificate types." },
+                { title: "Stay Compliant", body: "Relax knowing your team is always certified. Access real-time dashboards, generate audit reports, and maintain 100% compliance." }
+              ].map((card, idx) => (
+                <div key={idx} className="bg-white rounded-2xl border-2 border-black p-8 flex flex-col gap-6 items-center text-center transition-all duration-200 hover:shadow-xl hover:border-gray-400 cursor-pointer">
+                  <p className="font-unbounded font-semibold text-2xl text-black">{card.title}</p>
+                  <p className="font-geist font-medium text-lg text-black leading-relaxed">{card.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile View - Stacked */}
+          <div className="md:hidden space-y-8">
+            {[
+              { step: "01", title: "Upload Certificates", body: "Bulk upload existing certificates or integrate with your HR system. Our AI-powered OCR extracts all relevant data automatically." },
+              { step: "02", title: "Set Alert Rules", body: "Configure notification schedules, escalation chains, and renewal workflows. Customize alerts for different certificate types." },
+              { step: "03", title: "Stay Compliant", body: "Relax knowing your team is always certified. Access real-time dashboards, generate audit reports, and maintain 100% compliance." }
+            ].map((card, idx) => (
+              <div key={idx} className="border-2 border-black rounded-2xl p-6 flex flex-col gap-6 items-center transition-all duration-200 hover:shadow-lg hover:border-gray-400 cursor-pointer">
+                <div className="bg-black rounded-full w-32 h-32 flex items-center justify-center shadow-lg">
+                  <p className="font-unbounded font-semibold text-3xl text-white text-center">{card.step}</p>
+                </div>
+                <div className="flex flex-col gap-4 items-center text-center w-full">
+                  <p className="font-unbounded font-semibold text-2xl text-black">{card.title}</p>
+                  <p className="font-geist font-medium text-lg text-black">{card.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="w-full bg-black py-16 px-8" data-node-id="1714:635">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="space-y-7 mb-16 text-center" data-node-id="1714:647">
+            <div className="inline-block mx-auto space-y-8" data-node-id="1714:639">
+              <p className="font-unbounded font-semibold text-4xl text-white">Axiom tracker Features</p>
+              <div className="flex justify-center">
+                <div className="relative size-20" data-node-id="1714:643">
+                  <img alt="" className="w-full h-full" src={imgSubtract1} />
+                </div>
+              </div>
+            </div>
+            <p className="font-geist font-medium text-2xl text-white">
+              Everything you need to manage certificates, ensure compliance, and protect your business from regulatory risks.
+            </p>
+          </div>
+
+          {/* Feature Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12" data-node-id="1792:9853">
+            {/* Smart Credentials */}
+            <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-200 hover:shadow-xl hover:scale-105 cursor-pointer" data-node-id="1715:649">
+              <div className="h-72 overflow-hidden" data-node-id="1792:9854">
+                <img alt="Smart Credentials" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" src={img897551} />
+              </div>
+              <div className="p-6 space-y-2.5 flex-1 flex flex-col">
+                <p className="font-montserrat font-semibold text-2xl text-black">Smart Credentials Tracking</p>
+                <p className="font-montserrat font-normal text-lg text-black">Track all employee credentials in one place and get automatic alerts before they expire.</p>
+              </div>
+            </div>
+
+            {/* Intelligent Notifications */}
+            <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-200 hover:shadow-xl hover:scale-105 cursor-pointer" data-node-id="1792:9859">
+              <div className="h-72 overflow-hidden" data-node-id="1792:9860">
+                <img alt="Intelligent Notifications" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" src={img51} />
+              </div>
+              <div className="p-6 space-y-2.5 flex-1 flex flex-col">
+                <p className="font-montserrat font-semibold text-2xl text-black">Intelligent Notifications</p>
+                <p className="font-montserrat font-normal text-lg text-black">Get smart, multi-channel alerts with customizable reminders and automatic escalation to the right people.</p>
+              </div>
+            </div>
+
+            {/* Real-Time Analytics */}
+            <div className="bg-white rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-200 hover:shadow-xl hover:scale-105 cursor-pointer" data-node-id="1792:9871">
+              <div className="h-72 overflow-hidden" data-node-id="1792:9872">
+                <img alt="Real-Time Analytics" className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" src={imgWomanSittingHomeOfficeDeskLookingBusinessDocuments1} />
+              </div>
+              <div className="p-6 space-y-2.5 flex-1 flex flex-col">
+                <p className="font-montserrat font-semibold text-2xl text-black">Real-Time Analytics</p>
+                <p className="font-montserrat font-normal text-lg text-black">Monitor compliance with live dashboards and predictive insights to identify risks early and track trends across teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider Line */}
+      <div className="w-full max-w-6xl mx-auto px-8 py-4" data-node-id="1714:648">
+        <img alt="" className="w-full" src={imgLine2} />
+      </div>
+
+      {/* FAQs Section */}
+      <section className="w-full px-8 py-20 bg-white" data-node-id="1715:703">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12 space-y-4" data-node-id="1811:1931">
+            <p className="font-unbounded font-semibold text-3xl sm:text-4xl text-gray-700">Frequently Asked Questions</p>
+            <p className="font-geist font-medium text-lg sm:text-xl text-black max-w-3xl mx-auto">
+              {`Got questions? We've got answers. Can't find what you're looking for? Contact our support team.`}
+            </p>
+          </div>
+
+          {/* FAQ Items */}
+          <div className="space-y-5">
+            {[
+              "How does Axiom Tracker prevent certificate expiries?",
+              "Can Axiom Tracker integrate with our existing HR systems?",
+              "Is our certificate data secure?",
+              "What types of certificates can Axiom Tracker manage?"
+            ].map((question, idx) => (
+              <div key={idx} className="bg-white rounded-2xl shadow-sm border border-gray-100 px-8 py-8 flex items-center justify-between hover:shadow-lg hover:border-gray-300 transition-all duration-200 cursor-pointer group" data-node-id={`1715:${671 + idx * 6}`}>
+                <div className="flex gap-6 items-center w-full">
+                  <div className="flex-shrink-0 flex items-center justify-center transition-transform duration-200 group-hover:rotate-90">
+                    <div className="rotate-180 scale-y-[-1]">
+                      <img alt="Expand" className="size-7" src={img1} />
+                    </div>
+                  </div>
+                  <p className="font-unbounded font-semibold text-xl sm:text-2xl text-gray-700 group-hover:text-black transition-colors duration-200">{question}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Divider Line */}
+      <div className="w-full max-w-6xl mx-auto px-8 py-4" data-node-id="1717:955">
+        <img alt="" className="w-full" src={imgLine2} />
+      </div>
+
+      {/* Final CTA Section */}
+      <section className="w-full bg-black py-20 px-8" data-node-id="1715:704">
+        <div className="max-w-3xl mx-auto flex flex-col gap-10 items-center text-center py-12" data-node-id="1715:716">
+          <p className="font-unbounded font-bold text-3xl sm:text-4xl text-white leading-tight">
+            Ready to Eliminate Compliance Risks?
+          </p>
+          <p className="font-geist font-semibold text-xl sm:text-2xl text-white max-w-2xl">
+            Join 500+ companies that trust Axiom Tracker to manage their certificates and stay compliant.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-2 items-center" data-node-id="1715:705">
+            <button className="bg-white rounded-3xl px-10 py-5 inline-flex cursor-pointer hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95" data-node-id="1715:706">
+              <p className="font-montserrat font-bold text-lg text-black">Get Started</p>
+            </button>
+            <div className="flex items-center justify-center">
+              <div className="scale-y-[-1]">
+                <button className="bg-white rounded-3xl px-6 py-5 inline-flex cursor-pointer hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95">
+                  <img alt="Arrow" className="size-8" src={img2} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="w-full bg-black rounded-3xl mx-4 sm:mx-8 my-8 px-8 sm:px-16 py-12" data-node-id="1715:826">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24" data-node-id="1715:828">
+          {/* Left Section */}
+          <div className="flex flex-col gap-12 w-full lg:w-5/12" data-node-id="1715:830">
+            <div className="relative size-16" data-node-id="1715:869">
+              <img alt="Logo" className="w-full h-full" src={imgSubtract3} />
+            </div>
+            <div>
+              <p className="font-montserrat font-semibold text-lg text-white leading-8 mb-0">Let's make your estate safer and smarter.</p>
+              <p className="font-montserrat font-semibold text-lg text-white leading-8">Contact us for bulk estate discounts or multi-location deployment.</p>
+            </div>
+            <p className="font-montserrat font-normal text-base text-white/80 leading-7">
+              © 2025 Axiom Tracker - All Rights Reserved
+            </p>
+          </div>
+
+          {/* Right Section */}
+          <div className="flex flex-col sm:flex-row gap-12 sm:gap-16 w-full lg:w-7/12" data-node-id="1715:836">
+            {/* Quick Links */}
+            <div className="flex flex-col gap-6" data-node-id="1715:837">
+              <p className="font-semibold text-xl text-white">QUICK LINKS</p>
+              <div className="flex flex-col gap-4 font-montserrat font-medium text-lg text-white" data-node-id="1715:839">
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">Home</p>
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">Features</p>
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">FAQs</p>
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">Contact</p>
+              </div>
+            </div>
+
+            {/* Contact Us */}
+            <div className="flex flex-col gap-6" data-node-id="1715:844">
+              <p className="font-semibold text-xl text-white">CONTACT US</p>
+              <a href="mailto:hello@axiomtracker.com" className="font-montserrat font-medium text-lg text-white hover:text-blue-300 hover:underline transition-all duration-200 cursor-pointer">hello@axiomtracker.com</a>
+            </div>
+
+            {/* Legal */}
+            <div className="flex flex-col gap-6" data-node-id="1715:854">
+              <p className="font-semibold text-xl text-white">LEGAL</p>
+              <div className="flex flex-col gap-4 font-montserrat font-medium text-lg text-white" data-node-id="1715:856">
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">Terms of Service</p>
+                <p className="cursor-pointer hover:text-gray-300 hover:translate-x-1 transition-all duration-200">Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
