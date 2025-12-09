@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Sidebar from '../components/Sidebar';
 
@@ -43,8 +43,10 @@ interface NotificationSettings {
 export default function SettingsPage() {
   const router = useRouter();
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>('account');
   const [showFrequencyDropdown, setShowFrequencyDropdown] = useState(false);
+  const userMenuRef = useRef<HTMLDivElement>(null);
   
   const [accountForm, setAccountForm] = useState<AccountFormData>({
     firstName: '',
@@ -79,6 +81,35 @@ export default function SettingsPage() {
     router.push('/login');
   };
 
+  // Prevent body scroll when sidebar is open on mobile
+  useEffect(() => {
+    if (sidebarOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [sidebarOpen]);
+
+  // Close user menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(event.target as Node)) {
+        setUserMenuOpen(false);
+      }
+    };
+
+    if (userMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [userMenuOpen]);
+
   const handleSaveAccount = () => {
     console.log('Account form saved:', accountForm);
   };
@@ -95,27 +126,39 @@ export default function SettingsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col md:flex-row">
+    <div className="min-h-screen bg-white flex">
       {/* SIDEBAR */}
-      <Sidebar />
+      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
       {/* MAIN CONTENT */}
       <div className="flex-1 md:ml-80 w-full">
         {/* HEADER */}
-        <header className="bg-white border-b border-[#e6e6e6] px-4 md:px-10 py-4 md:py-7 flex items-center justify-between shadow-sm flex-wrap md:flex-nowrap gap-4">
-          <h1 className="font-unbounded font-semibold text-xl md:text-2xl text-black order-1">Settings</h1>
+        <header className="bg-white border-b border-[#e6e6e6] px-4 md:px-10 py-4 md:py-7 flex items-center justify-between shadow-sm sticky top-0 z-30">
+          <div className="flex items-center gap-3 md:gap-4">
+            {/* Hamburger Menu Button (Mobile Only) */}
+            <button
+              onClick={() => setSidebarOpen(true)}
+              className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 active:bg-gray-200 transition"
+              aria-label="Open menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+            <h1 className="font-unbounded font-semibold text-xl md:text-2xl text-black">Settings</h1>
+          </div>
 
-          <div className="flex items-center gap-4 md:gap-7 order-2">
+          <div className="flex items-center gap-3 md:gap-7">
             {/* Notification Icon */}
-            <button className="relative">
-              <img src={iconNotification} alt="Notifications" className="w-6 md:w-8 h-6 md:h-8 hover:opacity-70 transition" />
+            <button className="relative min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 rounded-lg transition active:bg-gray-200">
+              <img src={iconNotification} alt="Notifications" className="w-6 md:w-8 h-6 md:h-8" />
             </button>
 
             {/* User Profile Dropdown */}
-            <div className="relative">
+            <div className="relative" ref={userMenuRef}>
               <button
                 onClick={() => setUserMenuOpen(!userMenuOpen)}
-                className="bg-[#f6f6f6] flex items-center gap-2 md:gap-4 px-2 md:px-3 py-1.5 md:py-2 rounded-full hover:bg-gray-100 transition"
+                className="bg-[#f6f6f6] flex items-center gap-2 md:gap-4 px-2 md:px-3 py-1.5 md:py-2 rounded-full hover:bg-gray-100 active:bg-gray-200 transition min-h-[44px]"
               >
                 <div className="flex items-center gap-2 md:gap-3.5">
                   <div className="w-10 md:w-14 h-10 md:h-14 bg-gray-400 rounded-full flex items-center justify-center shrink-0">
@@ -131,7 +174,7 @@ export default function SettingsPage() {
 
               {/* Dropdown Menu */}
               {userMenuOpen && (
-                <div className="absolute right-0 mt-2 w-72 md:w-80 bg-white border border-[#c9c9c9] rounded-lg shadow-lg z-50 overflow-hidden">
+                <div className="absolute right-0 mt-2 w-[calc(100vw-2rem)] max-w-[320px] md:w-80 bg-white border border-[#c9c9c9] rounded-lg shadow-lg z-50 overflow-hidden">
                   <div className="px-6 md:px-8 py-4 md:py-5 border-b border-gray-300">
                     <div className="flex items-center gap-3 md:gap-4">
                       <div className="w-16 md:w-20 h-16 md:h-20 bg-gray-400 rounded-full flex items-center justify-center shrink-0">
