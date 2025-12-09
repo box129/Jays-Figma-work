@@ -29,9 +29,6 @@ const dashboardBgImage = "https://www.figma.com/api/mcp/asset/4361388a-77b9-4018
 const iconActivityLicense = "https://www.figma.com/api/mcp/asset/54aa23a3-2619-4fc7-a28c-dd34424445f7";
 const iconActivityCert = "https://www.figma.com/api/mcp/asset/5e2ac18d-a852-4f6c-932a-bbbc74e4836b";
 
-// Expanded view navigation arrow
-const iconArrow = "https://www.figma.com/api/mcp/asset/52303320-aa98-4c81-82c5-99ef8d190f5a";
-
 // Sample activity data
 const activities = [
   {
@@ -83,7 +80,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col md:flex-row">
       {/* SIDEBAR */}
-      <aside className="w-full md:w-80 bg-white border-b md:border-b-0 md:border-r border-[#e6e6e6] md:fixed md:left-0 md:top-0 md:bottom-0 flex flex-col">
+      <aside className="w-full md:w-64 bg-white border-b md:border-b-0 md:border-r border-[#e6e6e6] md:fixed md:left-0 md:top-0 md:bottom-0 flex flex-col">
         {/* Logo */}
         <div className="flex flex-col items-center gap-2 pt-6 md:pt-10 pb-8 md:pb-16">
           <img src={iconLogo} alt="Axiom Tracker" className="w-14 md:w-20 h-14 md:h-20" />
@@ -122,7 +119,7 @@ export default function DashboardPage() {
       </aside>
 
       {/* MAIN CONTENT */}
-      <div className="flex-1 md:ml-80 w-full">
+      <div className="flex-1 md:ml-64 w-full">
         {/* HEADER */}
         <header className="bg-white border-b border-[#e6e6e6] px-4 md:px-10 py-4 md:py-7 flex items-center justify-between shadow-sm flex-wrap md:flex-nowrap gap-4">
           <h1 className="font-unbounded font-semibold text-xl md:text-2xl text-black order-1">Dashboard</h1>
@@ -185,13 +182,13 @@ export default function DashboardPage() {
         </header>
 
         {/* PAGE CONTENT */}
-        <main className="p-4 md:p-10 overflow-x-hidden">
+        <main className="p-4 md:p-8 lg:p-10 overflow-x-hidden">
           {!showAllActivities ? (
             // Main Dashboard View
-            <div className="space-y-6 md:space-y-8">
+            <div className="space-y-6 md:space-y-8 max-w-[1800px] mx-auto">
               {/* Dashboard Overview Section */}
               <div
-                className="bg-cover bg-center rounded-lg p-6 md:p-12 relative overflow-hidden"
+                className="bg-cover bg-center rounded-xl p-6 md:p-10 lg:p-12 relative overflow-hidden shadow-lg"
                 style={{ backgroundImage: `url(${dashboardBgImage})` }}
               >
                 <div className="absolute inset-0 bg-black/60" />
@@ -199,27 +196,27 @@ export default function DashboardPage() {
                   <h2 className="font-montserrat font-semibold text-xl md:text-2xl text-white mb-6 md:mb-8">Dashboard Overview</h2>
 
                   {/* Stats Cards */}
-                  <div className="flex gap-3 md:gap-4 overflow-x-auto pb-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                     {/* Total Certificates */}
-                    <div className="bg-white rounded-lg p-6 md:p-8 min-w-[250px] md:min-w-[300px]">
+                    <div className="bg-white rounded-lg p-6 lg:p-8 transition-all duration-200 hover:shadow-lg hover:scale-105">
                       <p className="font-montserrat font-medium text-sm md:text-base text-black mb-4 md:mb-5">Total Certificates</p>
                       <p className="font-montserrat font-semibold text-3xl md:text-4xl text-black">42</p>
                     </div>
 
                     {/* Active */}
-                    <div className="bg-white rounded-lg p-6 md:p-8 min-w-[250px] md:min-w-[300px]">
+                    <div className="bg-white rounded-lg p-6 lg:p-8 transition-all duration-200 hover:shadow-lg hover:scale-105">
                       <p className="font-montserrat font-medium text-sm md:text-base text-black mb-4 md:mb-5">Active</p>
                       <p className="font-montserrat font-semibold text-3xl md:text-4xl text-black">35</p>
                     </div>
 
                     {/* Expiring Soon */}
-                    <div className="bg-white rounded-lg p-6 md:p-8 min-w-[250px] md:min-w-[300px]">
+                    <div className="bg-white rounded-lg p-6 lg:p-8 transition-all duration-200 hover:shadow-lg hover:scale-105">
                       <p className="font-montserrat font-medium text-sm md:text-base text-black mb-4 md:mb-5">Expiring Soon (30 Days)</p>
                       <p className="font-montserrat font-semibold text-3xl md:text-4xl text-black">05</p>
                     </div>
 
                     {/* Expired */}
-                    <div className="bg-white rounded-lg p-6 md:p-8 min-w-[250px] md:min-w-[300px]">
+                    <div className="bg-white rounded-lg p-6 lg:p-8 transition-all duration-200 hover:shadow-lg hover:scale-105">
                       <p className="font-montserrat font-medium text-sm md:text-base text-black mb-4 md:mb-5">Expired</p>
                       <p className="font-montserrat font-semibold text-3xl md:text-4xl text-black">02</p>
                     </div>
@@ -228,9 +225,9 @@ export default function DashboardPage() {
               </div>
 
               {/* Main Content Area */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 lg:gap-8 max-w-[1600px]">
                 {/* Recent Activities - Wider */}
-                <div className="md:col-span-2 bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8">
+                <div className="xl:col-span-2 bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
                   <div className="flex items-center justify-between mb-6 md:mb-8 flex-wrap gap-3">
                     <h3 className="font-geist font-semibold text-xl md:text-2xl text-black">Recent Activities</h3>
                     <button
@@ -269,7 +266,7 @@ export default function DashboardPage() {
                 </div>
 
                 {/* Quick Actions */}
-                <div className="bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8">
+                <div className="bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
                   <h3 className="font-unbounded font-medium text-xl md:text-2xl text-black mb-4 md:mb-6">Quick Actions</h3>
 
                   <div className="space-y-2 md:space-y-3">
@@ -333,7 +330,7 @@ export default function DashboardPage() {
             </div>
           ) : (
             // Expanded Activities View
-            <div className="bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8">
+            <div className="bg-white border border-[#e6e6e6] rounded-lg p-6 md:p-8 max-w-[1400px] mx-auto shadow-sm">
               <div className="flex items-center justify-between mb-6 md:mb-8 flex-wrap gap-3">
                 <h2 className="font-montserrat font-semibold text-xl md:text-2xl text-black">Notifications / Recent Activities</h2>
                 <button
