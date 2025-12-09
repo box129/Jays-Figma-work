@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 // Image assets from Figma - Auth Choice Screen
@@ -11,7 +10,6 @@ const imgBackArrow = "https://www.figma.com/api/mcp/asset/5d10e848-4088-46db-950
 const imgArrowButton = "https://www.figma.com/api/mcp/asset/9fecdd93-b9be-42ec-80f7-a6631e840015";
 
 export default function LoginChoicePage() {
-  const router = useRouter();
 
   return (
     <main

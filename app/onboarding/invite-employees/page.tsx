@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 
 // Image assets
@@ -57,7 +56,7 @@ export default function InviteEmployeesPage() {
       
       // Navigate to success page
       router.push('/onboarding/setup-successful');
-    } catch (err) {
+    } catch {
       setError('Failed to send invitations. Please try again.');
     } finally {
       setIsSubmitting(false);

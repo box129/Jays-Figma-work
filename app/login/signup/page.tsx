@@ -50,7 +50,7 @@ export default function SignupPage() {
       
       // For now, redirect to invite employees page
       router.push("/onboarding/invite-employees");
-    } catch (err) {
+    } catch {
       setError("Signup failed. Please try again.");
     } finally {
       setIsSubmitting(false);

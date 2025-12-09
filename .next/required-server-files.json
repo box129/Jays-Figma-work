@@ -99,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\LENOVO T14\\Desktop\\Jay-Figma-work\\axiom-tracker",
+    "outputFileTracingRoot": "C:\\Users\\LENOVO T14\\Desktop\\Jay-Figma-work",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -289,12 +289,12 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\LENOVO T14\\Desktop\\Jay-Figma-work\\axiom-tracker"
+      "root": "C:\\Users\\LENOVO T14\\Desktop\\Jay-Figma-work"
     },
     "distDirRoot": ".next"
   },
   "appDir": "C:\\Users\\LENOVO T14\\Desktop\\Jay-Figma-work\\axiom-tracker",
-  "relativeAppDir": "",
+  "relativeAppDir": "axiom-tracker",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",

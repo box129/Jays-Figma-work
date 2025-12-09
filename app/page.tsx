@@ -1,3 +1,5 @@
+"use client";
+
 const imgFreepikGenrateAnImageThatExplainsmartCertificateTra359761 = "https://www.figma.com/api/mcp/asset/97b7c926-90cc-4c02-85cb-e17594f35184";
 const imgPortraitYoungGirlGrayTShirtPurpleWall1 = "https://www.figma.com/api/mcp/asset/f1f0ae0f-6d18-4bbe-bde9-74401d0de964";
 const imgHappyManStudentWithAfroHairdoShowsWhiteTeethBeingGoodMoodAfterClasses1 = "https://www.figma.com/api/mcp/asset/54b6ec21-9592-471f-a330-67e1be98b5bd";
@@ -6,11 +8,9 @@ const img897551 = "https://www.figma.com/api/mcp/asset/d76e2fb7-2bd2-4f7a-9c0e-3
 const img51 = "https://www.figma.com/api/mcp/asset/ec98f2d7-3964-47a2-853d-af248056da24";
 const imgWomanSittingHomeOfficeDeskLookingBusinessDocuments1 = "https://www.figma.com/api/mcp/asset/3614f7b6-2f57-40aa-bf62-f3bab3320af3";
 const imgSubtract = "https://www.figma.com/api/mcp/asset/69dba925-7915-4086-bf2a-334885229f1e";
-const imgEllipse2349 = "https://www.figma.com/api/mcp/asset/64a35a8f-980a-4758-94ce-3510f4f7cc3c";
 const img = "https://www.figma.com/api/mcp/asset/c8ba3351-af04-4a9f-88ab-4f4bcee3c569";
 const imgSubtract1 = "https://www.figma.com/api/mcp/asset/b6fcc130-f460-4ee2-b205-99731f89b657";
 const imgSubtract2 = "https://www.figma.com/api/mcp/asset/4d7a0538-24fb-4d8b-a6c5-4bc6a1a8ed76";
-const imgFrame1171279796 = "https://www.figma.com/api/mcp/asset/06ee8371-cac3-4b4e-9660-05a14ccba0b6";
 const imgLine2 = "https://www.figma.com/api/mcp/asset/abdb0cf7-73e1-4a2f-8026-c9eafea59360";
 const img1 = "https://www.figma.com/api/mcp/asset/b40095c6-b896-46e1-94a1-296d1efbd834";
 const img2 = "https://www.figma.com/api/mcp/asset/6da759cf-3211-4803-b0c8-64dcd0004f95";

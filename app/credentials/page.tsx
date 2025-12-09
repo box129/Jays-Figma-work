@@ -84,7 +84,7 @@ export default function CredentialsPage() {
   const [selectedCredential, setSelectedCredential] = useState<Credential | null>(null);
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
-  const [toastType, setToastType] = useState<'success' | 'error'>('success');
+  const [, setToastType] = useState<'success' | 'error'>('success');
   const [showActionMenu, setShowActionMenu] = useState<string | null>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState<FormData>({
