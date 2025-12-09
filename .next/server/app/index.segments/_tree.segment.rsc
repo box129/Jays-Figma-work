@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/cd6342756bed9e10.css","style"]
+:HL["/_next/static/chunks/d848ca639f2e26f2.css","style"]
 :HL["https://www.figma.com/api/mcp/asset/69dba925-7915-4086-bf2a-334885229f1e","image"]
 :HL["https://www.figma.com/api/mcp/asset/97b7c926-90cc-4c02-85cb-e17594f35184","image"]
 :HL["https://www.figma.com/api/mcp/asset/c8ba3351-af04-4a9f-88ab-4f4bcee3c569","image"]
@@ -14,4 +14,4 @@
 :HL["https://www.figma.com/api/mcp/asset/b40095c6-b896-46e1-94a1-296d1efbd834","image"]
 :HL["https://www.figma.com/api/mcp/asset/6da759cf-3211-4803-b0c8-64dcd0004f95","image"]
 :HL["https://www.figma.com/api/mcp/asset/077a8b15-1da9-497e-aea7-0c69c7cd63e1","image"]
-0:{"buildId":"evmNvLeAcbj7m1pDM-Oq4","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"7KwcWjRpYDa7EWWaVIPXP","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

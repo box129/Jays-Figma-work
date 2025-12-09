@@ -2,14 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-
-// Sidebar icons
-const iconLogo = "https://www.figma.com/api/mcp/asset/ef58a6a9-cdb4-47d5-be4a-14a7a3de89e7";
-const iconDashboard = "https://www.figma.com/api/mcp/asset/56421e28-3443-433c-b7ce-c95531f2ca06";
-const iconCredentials = "https://www.figma.com/api/mcp/asset/b7da7900-d7f6-4002-8d91-5c129fa50ae8";
-const iconEntity = "https://www.figma.com/api/mcp/asset/16e94b51-7199-4bc9-a096-df9712ae03c6";
-const iconSettings = "https://www.figma.com/api/mcp/asset/25f47940-a32e-407c-9339-a8eecb18e21b";
+import Sidebar from '../components/Sidebar';
 
 // Header icons
 const iconNotification = "https://www.figma.com/api/mcp/asset/ded7a757-2476-491a-9144-f622c9a20cd2";
@@ -80,46 +73,10 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col md:flex-row">
       {/* SIDEBAR */}
-      <aside className="w-full md:w-64 bg-white border-b md:border-b-0 md:border-r border-[#e6e6e6] md:fixed md:left-0 md:top-0 md:bottom-0 flex flex-col">
-        {/* Logo */}
-        <div className="flex flex-col items-center gap-2 pt-6 md:pt-10 pb-8 md:pb-16">
-          <img src={iconLogo} alt="Axiom Tracker" className="w-14 md:w-20 h-14 md:h-20" />
-          <p className="font-montserrat font-semibold text-lg md:text-xl text-black">Axiom Tracker</p>
-        </div>
-
-        {/* Navigation Menu */}
-        <nav className="flex-1 px-3 md:px-6 space-y-2 md:space-y-3 overflow-x-auto md:overflow-auto">
-          {/* Dashboard */}
-          <Link
-            href="/dashboard"
-            className="flex items-center gap-4 md:gap-6 px-4 md:px-6 py-3 md:py-4 bg-black text-white rounded-lg font-geist font-medium text-base md:text-xl hover:bg-gray-900 transition whitespace-nowrap md:whitespace-normal"
-          >
-            <img src={iconDashboard} alt="Dashboard" className="w-6 md:w-8 h-6 md:h-8 flex-shrink-0" />
-            <span>Dashboard</span>
-          </Link>
-
-          {/* Credentials */}
-          <button className="w-full flex items-center gap-4 md:gap-6 px-4 md:px-6 py-3 md:py-4 text-black hover:bg-gray-50 rounded-lg font-geist font-medium text-base md:text-xl transition whitespace-nowrap md:whitespace-normal">
-            <img src={iconCredentials} alt="Credentials" className="w-6 md:w-8 h-6 md:h-8 flex-shrink-0" />
-            <span>Credentials</span>
-          </button>
-
-          {/* Entity */}
-          <button className="w-full flex items-center gap-4 md:gap-6 px-4 md:px-6 py-3 md:py-4 text-black hover:bg-gray-50 rounded-lg font-geist font-medium text-base md:text-xl transition whitespace-nowrap md:whitespace-normal">
-            <img src={iconEntity} alt="Entity" className="w-6 md:w-8 h-6 md:h-8 flex-shrink-0" />
-            <span>Entity</span>
-          </button>
-
-          {/* Settings */}
-          <button className="w-full flex items-center gap-4 md:gap-6 px-4 md:px-6 py-3 md:py-4 text-black hover:bg-gray-50 rounded-lg font-geist font-medium text-base md:text-xl transition whitespace-nowrap md:whitespace-normal">
-            <img src={iconSettings} alt="Settings" className="w-6 md:w-8 h-6 md:h-8 flex-shrink-0" />
-            <span>Settings</span>
-          </button>
-        </nav>
-      </aside>
+      <Sidebar />
 
       {/* MAIN CONTENT */}
-      <div className="flex-1 md:ml-64 w-full">
+      <div className="flex-1 md:ml-80 w-full">
         {/* HEADER */}
         <header className="bg-white border-b border-[#e6e6e6] px-4 md:px-10 py-4 md:py-7 flex items-center justify-between shadow-sm flex-wrap md:flex-nowrap gap-4">
           <h1 className="font-unbounded font-semibold text-xl md:text-2xl text-black order-1">Dashboard</h1>

@@ -2,8 +2,16 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/credentials/page": "/credentials",
+  "/dashboard/page": "/dashboard",
+  "/entity/page": "/entity",
   "/forgot-password/page": "/forgot-password",
   "/login/page": "/login",
+  "/login/signin/page": "/login/signin",
+  "/login/signup/page": "/login/signup",
+  "/onboarding/invite-employees/page": "/onboarding/invite-employees",
+  "/onboarding/setup-successful/page": "/onboarding/setup-successful",
   "/page": "/",
+  "/settings/page": "/settings",
   "/signup/page": "/signup"
 }

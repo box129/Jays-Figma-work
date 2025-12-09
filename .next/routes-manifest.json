@@ -49,6 +49,24 @@
       "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
+      "page": "/credentials",
+      "regex": "^/credentials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/credentials(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/entity",
+      "regex": "^/entity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/entity(?:/)?$"
+    },
+    {
       "page": "/forgot-password",
       "regex": "^/forgot\\-password(?:/)?$",
       "routeKeys": {},
@@ -59,6 +77,36 @@
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/login/signin",
+      "regex": "^/login/signin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login/signin(?:/)?$"
+    },
+    {
+      "page": "/login/signup",
+      "regex": "^/login/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login/signup(?:/)?$"
+    },
+    {
+      "page": "/onboarding/invite-employees",
+      "regex": "^/onboarding/invite\\-employees(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/onboarding/invite\\-employees(?:/)?$"
+    },
+    {
+      "page": "/onboarding/setup-successful",
+      "regex": "^/onboarding/setup\\-successful(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/onboarding/setup\\-successful(?:/)?$"
+    },
+    {
+      "page": "/settings",
+      "regex": "^/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings(?:/)?$"
     },
     {
       "page": "/signup",
