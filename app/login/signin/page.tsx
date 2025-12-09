@@ -47,7 +47,7 @@ export default function SigninPage() {
       data-node-id="1734:6488"
     >
       {/* Left side - Image with overlay and hero content */}
-      <section className="relative w-full lg:w-1/2 h-[40vh] lg:h-screen overflow-hidden flex flex-col flex-shrink-0">
+      <section className="relative w-full lg:w-1/2 h-[40vh] lg:h-screen overflow-hidden flex flex-col shrink-0">
         <img
           alt="Professional working on laptop"
           src={imgPrivateInvestigator}
@@ -62,7 +62,7 @@ export default function SigninPage() {
           {/* Header */}
           <header className="flex items-center justify-between w-full text-white mb-auto">
             <div className="flex items-center gap-2 lg:gap-4">
-              <div className="relative w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0">
+              <div className="relative w-10 h-10 lg:w-12 lg:h-12 shrink-0">
                 <img 
                   alt="Axiom Tracker Logo" 
                   className="w-full h-full object-contain" 
@@ -78,7 +78,7 @@ export default function SigninPage() {
               href="/"
               className="flex items-center gap-2 text-xs sm:text-sm lg:text-base font-montserrat font-medium text-white hover:text-gray-200 transition-colors whitespace-nowrap"
             >
-              <div className="relative w-4 h-3 lg:w-5 lg:h-4 flex-shrink-0">
+              <div className="relative w-4 h-3 lg:w-5 lg:h-4 shrink-0">
                 <img alt="Back Arrow" className="w-full h-full object-contain" src={imgBackArrow} />
               </div>
               <span>Back to Website</span>
@@ -98,7 +98,7 @@ export default function SigninPage() {
                 className="bg-white rounded-lg lg:rounded-xl w-fit p-2 lg:p-3 flex items-center justify-center hover:bg-gray-100 transition-all duration-200 hover:shadow-lg transform hover:scale-105 active:scale-95"
                 aria-label="Learn more"
               >
-                <div className="relative w-5 h-5 lg:w-7 lg:h-7 scale-y-[-100%]">
+                <div className="relative w-5 h-5 lg:w-7 lg:h-7 -scale-y-100">
                   <img alt="Arrow Down" className="w-full h-full object-contain" src={imgArrowButton} />
                 </div>
               </button>
@@ -108,7 +108,7 @@ export default function SigninPage() {
       </section>
 
       {/* Right side - Login Form */}
-      <section className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-8 lg:py-0 bg-white flex-shrink-0 min-h-screen lg:min-h-auto">
+      <section className="w-full lg:w-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-8 lg:py-0 bg-white shrink-0 min-h-screen lg:min-h-auto">
         <div className="w-full max-w-md space-y-8 lg:space-y-10" data-node-id="1734:6501">
           
           {/* Form Header */}
